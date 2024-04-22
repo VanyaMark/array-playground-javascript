@@ -13,6 +13,7 @@
 
         .fancy {
             font-family: 'Rocher';
+            background-color: red;
 
         }
     </style>
@@ -33,10 +34,17 @@
 
         // Resultado esperado: https://oscarm.tinytake.com/msc/ODgwNjcxNl8yMjIzNDgzMQ
         let seleccion = "default";
+        for (let i=0; i<estilosDisponibles.length; i++) {
+            if (estilosDisponibles[i] === "fancy") {
+                seleccion = estilosDisponibles[i]
+            }
+        }
+
+        console.log(seleccion)
 
         // No modificar a partir de aquí
-        document.querySelector(".lorem").classList.add(seleccion);
-
+      //  document.querySelector(".lorem").classList.add('seleccion');
+      textoSpan.classList.add(seleccion);
     </script>
 </body>
 
