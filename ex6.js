@@ -26,3 +26,21 @@ while (!pezEncontrado && i < listaPeces.length) {
 }
 
 console.log("He encontrado al pez?: " + pezEncontrado);
+
+let arr = [45,67,87,23,5,32,60];
+
+// Your code here
+const newArr = arr.map((el)=> typeof el)
+console.log(newArr)
+
+let myArray = [42, true, "towel", [2,1], 'hello', 34.4, {"name": "juan"}];
+
+/*let hello = [];
+for(let i = 0; i < myArray.length; i++) {
+    let item = myArray[i];
+    // MAGIC HAPPENS HERE
+}
+*/
+
+const hello =myArray.filter(el => typeof el == "object" )
+console.log(hello)
